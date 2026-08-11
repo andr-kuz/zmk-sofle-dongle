@@ -1,29 +1,26 @@
-- [中文](README.md)
+- [Chinese](README.md)
 - [English](README_EN.md)
 
-# 更新列表
+# Update List
 
-- 2026/3/6
-  1. 全部模型都有修改，绘制了2各版本的手托
-  2. 修复了旋钮失效的问题
-  3. 修改了防抖时间，如果用的轴体性能号可以缩减防抖时间。如果用的轴体品质一半，可以拉长防抖时间。
-  
 - 2024/12/21
-  
+  1. Added support for zmk-studio (just refresh the left hand to use).
 - 2024/10/24
-  1. 修改供电模式，功耗降低。
-  2. 修正RGB供电自动关闭的功能。
+  1. Modified power supply mode to reduce power consumption.
+  2. Fixed the automatic shut-off feature for RGB power supply.
  
--2026/6/22 键盘支持DYA STUDIO改键了中文用户联系店主索取中文版DYA STUDIO安装包。这个上位机软件改键比ZMK studio更好用。
+-2026/6/22
+The keyboard now supports key remapping via DYA STUDIO. Chinese users should contact the seller to obtain the Chinese version of the DYA STUDIO installer. This PC software offers better key remapping functionality than ZMK Studio. Website: https://studio.dya.cormoran.works/ https://studio.dya.cormoran.works/
 
-> 请更新最新的固件。
+> If your keyboard was updated before October 24, please update to the latest firmware.
 > 
 ---
-# 联系我
+# Contact Me
 
-如需3D打印的模型文件或者键盘有任何异常和故障，请联系380465425@qq.com
+For 3D printed model files or any issues and malfunctions with the keyboard, please contact 380465425@qq.com
 
-# Sofle键位图
+# Sofle Keymap
+
 
 <img src="keymap-drawer/eyelash_sofle.svg" >
 
