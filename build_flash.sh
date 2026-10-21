@@ -10,20 +10,20 @@ build_and_flash() {
     local side=$1
     local archive_path=$2
     local reset=$3
-    local file_name="corne_$side.uf2"
+    local file_name="sofle_$side.uf2"
     local action_name=$side
     
     if [ -n "$archive_path" ]; then
         mkdir -p build/zephyr
         if [ "$reset" = "reset" ]; then
             action_name="reset"
-            file_name="settings_reset.uf2"
+            file_name="settings_reset-nice_nano_v2-zmk.uf2"
         fi
         echo "Extracting $action_name file from $archive_path"
         unzip -p "$archive_path" "$file_name" > "build/zephyr/$file_name"
     else
         echo "Building $side side"
-        west build -p -b nice_nano_v2 zmk/app -- -DZEPHYR_BASE=$(pwd)/zephyr -DZEPHYR_SDK_INSTALL_DIR=~/zephyr-sdk-0.16.5 -DSHIELD=corne_$side -DZMK_CONFIG=$(pwd)/config
+        west build -p -b nice_nano_v2 zmk/app -- -DZEPHYR_BASE=$(pwd)/zephyr -DZEPHYR_SDK_INSTALL_DIR=~/zephyr-sdk-0.16.5 -DSHIELD=sofle_$side -DZMK_CONFIG=$(pwd)/config
         mv build/zephyr/zmk.uf2 build/zephyr/$file_name
     fi
     
